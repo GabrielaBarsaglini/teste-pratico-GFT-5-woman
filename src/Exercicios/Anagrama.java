@@ -1,5 +1,6 @@
 package Exercicios;
 
+import java.util.Objects;
 import java.util.Scanner;
 
 /*
@@ -21,7 +22,26 @@ public class Anagrama {
 
         Scanner scan = new Scanner(System.in);
 
-        String palavra;
+        String palavra1;
+        String palavra2;
+        String anagrama;
 
+        System.out.println("Digite a primeira palavra: ");
+        palavra1 = scan.next();
+        palavra1.length();
+        System.out.println(palavra1.length());
+
+        System.out.println("Digite a segunda palavra: ");
+        palavra2 = scan.next();
+        palavra2.length();
+        System.out.println(palavra2.length());
+
+        if (Objects.equals(palavra1.length(), palavra2.length())) {
+            System.out.println("Tem o mesmo tamanho! ");
+
+        }
+        else {
+            System.out.println("As palavras não são um anagrama!");
+        }
     }
 }

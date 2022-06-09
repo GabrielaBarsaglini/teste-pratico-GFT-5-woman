@@ -18,13 +18,8 @@ public class MenuOpções {
         Scanner scan = new Scanner(System.in);
 
         int menu;
-        double nota1;
-        double nota2;
-        double nota3;
-        double mediaAritmetica;
-        double mediaPodenderada;
-
-
+        double nota1, nota2, nota3;
+        double mediaAritmetica, mediaPodenderada;
 
         System.out.println("Digite o número corresposnde a opção desejada:" +
                 " 1. Média aritmética 2. Média ponderada 3. Sair ");
@@ -44,7 +39,7 @@ public class MenuOpções {
             System.out.println("A média aritmética das notas é : " + mediaAritmetica);
 
         }
-        if (menu == 2) {
+         if (menu == 2) {
 
             System.out.println("Informe a primeira nota: ");
             nota1 = Double.parseDouble(scan.next());
@@ -59,7 +54,7 @@ public class MenuOpções {
             System.out.println("A média Ponderada das notas é : " + mediaPodenderada);
 
         }
-        if (menu == 3) {
+            if (menu == 3) {
             System.out.println("Saindo...");
         }
     }
