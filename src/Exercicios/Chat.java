@@ -1,5 +1,6 @@
 package Exercicios;
 
+import java.util.List;
 import java.util.Scanner;
 
 /*
@@ -16,9 +17,19 @@ usuários e os 3 tipos de mensagem. As mensagens de Imagem e Video devem apenas
 indicar o link para os arquivos.
  */
 public class Chat {
+    public Chat() {
+        Texto = new Texto();
+    }
+
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
 
+    } public class Mensagem(){
+
     }
+
+    List<String> Texto;
+
+
 }
